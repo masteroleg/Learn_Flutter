@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => CounterBloc()..add(CounterStartEvent()),
+      create: (context) => CounterBloc()..add(const CounterStartEvent()),
       child: MaterialApp(
         title: 'Flutter Codegen',
         theme: ThemeData(
